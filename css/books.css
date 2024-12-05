@@ -1,0 +1,135 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f8f9fa;
+    color: #124948;
+}
+
+
+/* Navbar Styles */
+.navbar-brand img {
+    height: 50px;
+}
+
+.navbar-light .navbar-nav .nav-link {
+    color: #124948;
+    font-weight: bold;
+}
+
+/* Navbar item hover effect */
+.navbar-light .navbar-nav .nav-link:hover {
+    color: #0b362e;
+}
+
+/* Ensure the navbar sticks to the top */
+.navbar {
+    position: sticky;
+    top: 0;
+    z-index: 1030; /* Ensure it stays above other content */
+    background-color: #fff; /* White background when sticky */
+}
+
+/* Add horizontal space between the navbar items */
+.navbar-nav .nav-item {
+    margin-right: 20px; /* Adjust as needed for desired spacing */
+}
+
+/* Optional: Add some padding to navbar items when hovered */
+.navbar-nav .nav-item .nav-link {
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+/* Add space between icon and text */
+.navbar-nav .nav-item .nav-link i {
+    margin-right: 8px; /* Adjust spacing between icon and text */
+}
+
+/* Add some style when scrolling (e.g., shadow) */
+.navbar.sticky-top {
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Adds subtle shadow when sticky */
+}
+
+
+h2{
+    font-family: 'Playfair Display', serif;
+}
+
+.btn-custom {
+    background-color: #124948;
+    color: white;
+    border: none;
+}
+.btn-custom:hover {
+    background-color: #0b362e;
+    color: white;
+}
+
+.book-card {
+    border: none;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    color: #124948;
+    transition: transform 0.3s, box-shadow 0.3s, background-color 0.3s ease;
+    margin-bottom: 30px;
+    background-color: white; /* Default background color */
+    border-radius: 10px; /* Rounded corners for the card */
+}
+
+.book-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    background-color: whitesmoke; /* Hover background color */
+    color: #124948;
+}
+
+.book-cover {
+    width: 100%;
+    height: auto;
+    max-width: 250px; /* max width of the book */
+    max-height: 350px; /* max height of the book */
+    overflow: hidden;
+    position: relative;
+    margin: 0 auto; /* Centers the book */
+}
+
+.book-cover img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+/* Book Card Text Styling */
+.book-card .card-body {
+    padding: 20px;
+    text-align: center;
+    color: #124948; /* Default text color */
+}
+
+.book-card:hover .card-body {
+    color:#124948; /* Text color on hover */
+}
+
+.book-card .card-title {
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+.book-card .card-text {
+    font-size: 1rem;
+    color: #555; /* Default text color for description */
+}
+
+.book-card:hover .card-text {
+    color: #124948; /* Change text color on hover */
+}
+
+/* Ensure the description text dynamically fits without truncating */
+.book-description {
+    font-size: 1rem;
+    color: #124948;
+    font-style: italic;
+    white-space: normal; /* Allow text to wrap */
+    overflow: visible; /* Allow text to expand fully */
+    max-height: none; /* Remove any max height restriction */
+    word-wrap: break-word; /* Break long words to fit the container */
+}

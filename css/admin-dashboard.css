@@ -1,0 +1,127 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+    box-sizing: border-box;
+}
+
+/* Navbar Styles */
+.navbar-brand img {
+    height: 50px;
+}
+
+.navbar-light .navbar-nav .nav-link {
+    color: #124948;
+    font-weight: bold;
+}
+
+/* Navbar item hover effect */
+.navbar-light .navbar-nav .nav-link:hover {
+    color: #0b362e;
+}
+
+/* Ensure the navbar sticks to the top */
+.navbar {
+    position: sticky;
+    top: 0;
+    z-index: 1030; /* Ensure it stays above other content */
+    background-color: #fff; /* White background when sticky */
+}
+
+/* Add horizontal space between the navbar items */
+.navbar-nav .nav-item {
+    margin-right: 20px; /* Adjust as needed for desired spacing */
+}
+
+/* Optional: Add some padding to navbar items when hovered */
+.navbar-nav .nav-item .nav-link {
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+/* Add space between icon and text */
+.navbar-nav .nav-item .nav-link i {
+    margin-right: 8px; /* Adjust spacing between icon and text */
+}
+
+/* Add some style when scrolling (e.g., shadow) */
+.navbar.sticky-top {
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Adds subtle shadow when sticky */
+}
+
+/* Dashboard Cards Layout */
+.dashboard-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    margin-top: 20px;
+}
+
+/* Individual Card Styles */
+.card {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #ffffff;
+    border: 2px solid #124948;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+    min-height: 150px; /* Set a minimum height for consistency */
+    text-align: center; /* Center content horizontally */
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+/* Card Content */
+.card-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Center the content vertically */
+    align-items: center;
+}
+
+.card-content h3 {
+    margin: 0;
+    font-size: 1.2rem;
+    color: #124948;
+}
+
+.card-content .count {
+    margin: 10px 0 0;
+    font-size: 2.5rem; /* Increase font size for better visibility */
+    font-weight: bold;
+    color: #0b362e;
+}
+
+/* Card Icons */
+.card-icon {
+    font-size: 3rem;
+    color: #0b362e;
+}
+
+/* Ensure cards have consistent height */
+.card .card-content {
+    flex-grow: 1; /* Allow the content to take up the available space */
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .dashboard-cards {
+        grid-template-columns: 1fr;
+    }
+
+    .card {
+        flex-direction: column;
+        align-items: center; /* Ensure the content is centered */
+        text-align: center; /* Ensure text is centered */
+    }
+
+    .card-icon {
+        margin-top: 15px; /* Space out icon from text when stacked */
+    }
+}

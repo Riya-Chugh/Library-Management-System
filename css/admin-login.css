@@ -1,0 +1,162 @@
+/* Global Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f8f9fa;
+    color: #124948;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    flex-direction: column;
+}
+
+/* Main Container for Logo and Card */
+.main-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    max-width: 1200px;
+    padding: 20px;
+}
+
+/* Card Header with Logo */
+.card-header {
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.bookify-logo {
+    display: block;
+    margin: 0 auto;
+    height: 80px;
+    width: auto;
+}
+
+/* Main login Card */
+.container {
+    display: flex;
+    justify-content: center;
+   width: auto;
+}
+
+.login-card {
+    display: flex;
+    max-width: 900px;
+    width: 100%;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    background-color: #ffffff;
+}
+
+/* Book-Like Layout for Left and Right Pages */
+ .right-side {
+    flex: 1;
+    padding: 20px;
+    border: 2px solid #124948;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+
+
+.login-image {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    object-fit: cover;
+}
+
+.right-side {
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 0 10px 10px 0;
+    margin-left: -1px; /* Slightly overlap the sides */
+}
+
+h2 {
+    font-size: 1.8rem;
+    margin-bottom: 30px;
+    color: #0b362e;
+}
+
+/* Form Styles */
+.login-form .form-group {
+    margin-bottom: 15px;
+    width: 100%;
+}
+
+/* Style for input fields */
+.login-form .form-control {
+    width: 100%;
+    padding: 10px 10px 10px 35px;
+    margin-top: 5px;
+    border: 2px solid #124948;
+    border-radius: 10px;
+    font-size: 1rem;
+    box-sizing: border-box;
+}
+
+/* Add icons inside input fields */
+.input-container i {
+    position: absolute;
+    left: 10px;
+    top: 55%;
+    transform: translateY(-50%);
+    color: #124948;
+}
+
+/* Input container to hold icon and input */
+.input-container {
+    position: relative;
+}
+
+/* Button Styles */
+.login-form button {
+    width: 100%;
+    padding: 10px;
+    background-color: #124948;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    font-size: 1.1rem;
+    cursor: pointer;
+    margin-top: 15px;
+}
+
+.login-form button:hover {
+    background-color: #0b362e;
+}
+
+/* Responsiveness for smaller screens */
+@media (max-width: 768px) {
+    
+    .left-side,.right-side{
+        margin-left: 10px;
+    }
+
+    .login-card {
+        flex-direction: column;
+    }
+
+    .card-header {
+        height: 60px;
+        margin-top: 100px;
+    }
+   
+    .bookify-logo {
+        height: 60px; 
+    }
+
+    .login-form .form-control {
+        padding: 10px 10px 10px 30px;
+    }
+}
+
