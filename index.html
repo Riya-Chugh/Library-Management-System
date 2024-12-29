@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,18 +9,19 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <!-- Custom CSS -->
     <link href="css/index.css" rel="stylesheet">
-    
-    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Playfair+Display:wght@700&display=swap"
+        rel="stylesheet">
 
     <!-- Add Font Awesome -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
 
     <!-- Link to Animate.css for animation effects -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
-
- 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
 
 </head>
+
 <body>
     <!-- Navigation Bar -->
     <nav class="navbar navbar-expand-lg navbar-light bg-light shadow sticky-top">
@@ -27,47 +29,59 @@
             <a class="navbar-brand" href="index.html">
                 <img src="img/logo.png" alt="Library Logo">
             </a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ms-auto">
-                    <li class="nav-item"><a class="nav-link active" href="index.html"><i class="fas fa-home"></i> Home</a></li>
-                    <li class="nav-item"><a class="nav-link" href="about.html"><i class="fas fa-info-circle"></i> About Us</a></li>
-                    <li class="nav-item"><a class="nav-link" href="contact.html"><i class="fas fa-phone"></i> Contact Us</a></li>
-                    <li class="nav-item"><a class="nav-link" href="books.html"><i class="fas fa-book"></i> Books</a></li>
-                     <!-- Reserve Book: Hidden by default -->
+                    <li class="nav-item"><a class="nav-link active" href="index.html"><i class="fas fa-home"></i>
+                            Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="about.html"><i class="fas fa-info-circle"></i> About
+                            Us</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contact.html"><i class="fas fa-phone"></i> Contact
+                            Us</a></li>
+                    <li class="nav-item"><a class="nav-link" href="books.html"><i class="fas fa-book"></i> Books</a>
+                    </li>
+                    <!-- Reserve Book: Hidden by default -->
                     <li class="nav-item d-none" id="reserve-book">
                         <a class="nav-link" href="reserve-books.html"><i class="fas fa-bookmark"></i> Reserve Book</a>
                     </li>
-                
+
                     <!-- Login/Signup -->
                     <li class="nav-item" id="login-signup-btn">
                         <a class="nav-link" href="login.html"><i class="fas fa-sign-in-alt"></i> Login / Signup</a>
                     </li>
 
-                    <li class="nav-item d-none" id="cart"><a class="nav-link" href="cart.html"><i class="fas fa-shopping-cart"></i> Cart</a></li>
-                
+                    <li class="nav-item d-none" id="cart"><a class="nav-link" href="cart.html"><i
+                                class="fas fa-shopping-cart"></i> Cart</a></li>
+
                     <!-- Dropdown for Logged-In User -->
                     <li class="nav-item dropdown d-none" id="welcome-user">
-                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
                             <i class="fas fa-user"></i> <span id="username-placeholder">User</span>
                         </a>
                         <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                            <li class="nav-item"><a class="nav-link" href="profile.html"><i class="fas fa-user-circle"></i> My Profile</a></li>
-                            <li class="nav-item"><hr class="dropdown-divider"></li>
-                            <li class="nav-item"><a class="nav-link" href="#log-out" id="logout-btn"><i class="fas fa-sign-out-alt"></i> Logout</a></li>
+                            <li class="nav-item"><a class="nav-link" href="profile.html"><i
+                                        class="fas fa-user-circle"></i> My Profile</a></li>
+                            <li class="nav-item">
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li class="nav-item"><a class="nav-link" href="#log-out" id="logout-btn"><i
+                                        class="fas fa-sign-out-alt"></i> Logout</a></li>
                         </ul>
                     </li>
                 </ul>
-                
+
             </div>
         </div>
     </nav>
-    
+
 
     <!-- Hero Section -->
-    <section class="hero-section" style="background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('img/top.jpg') no-repeat center center/cover;">
+    <section class="hero-section"
+        style="background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('img/top.jpg') no-repeat center center/cover;">
         <div class="hero-content">
             <h1 class="animated-text">Welcome to the Bookfiy.</h1>
             <p>Organize, Access, and Manage Your Library Efficiently</p>
@@ -78,7 +92,7 @@
     <!-- Reviews Section -->
     <section class="py-5">
         <div class="container">
-            <h2 class="text-center mb-4">   
+            <h2 class="text-center mb-4">
                 <i class="fas fa-quote-left"></i> What Our Readers Say
             </h2>
             <div class="row">
@@ -126,9 +140,9 @@
                         <div class="card-body">
                             <h5 class="card-title">THE POWER OF YOUR SUBCONSCIOUS MIND </h5>
                             <p class="card-text book-description">
-                                -  Unlock your subconscious to achieve your goals.
+                                - Unlock your subconscious to achieve your goals.
                             </p>
-                        </div>                                         
+                        </div>
                     </div>
                 </div>
                 <div class="col-md-4">
@@ -139,12 +153,12 @@
                         <div class="card-body">
                             <h5 class="card-title">THE ART OF LETTING GO</h5>
                             <p class="card-text book-description">
-                               - Practical secrets to achieve inner peace, happiness, and success in life.
+                                - Practical secrets to achieve inner peace, happiness, and success in life.
                             </p>
-                        </div>                                         
+                        </div>
                     </div>
                 </div>
-                
+
                 <div class="col-md-4">
                     <div class="card book-card">
                         <div class="book-cover">
@@ -153,9 +167,10 @@
                         <div class="card-body">
                             <h5 class="card-title">LIFE'S AMAZING SECRETS</h5>
                             <p class="card-text book-description">
-                                - Unlock the wisdom of life through practical secrets to achieve inner peace, happiness, and success.
+                                - Unlock the wisdom of life through practical secrets to achieve inner peace, happiness,
+                                and success.
                             </p>
-                        </div>                        
+                        </div>
                     </div>
                 </div>
             </div>
@@ -177,12 +192,13 @@
     <!-- Footer -->
     <footer class="text-white text-center py-3">
         <p>&copy; 2024 Bookfiy. All Rights Reserved.</p>
-       
+
     </footer>
 
     <!-- Bootstrap JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 
-    <script src="js/index.js"></script> 
+    <script src="js/index.js"></script>
 </body>
+
 </html>

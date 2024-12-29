@@ -24,13 +24,16 @@ body {
 .navbar {
     position: sticky;
     top: 0;
-    z-index: 1030; /* Ensure it stays above other content */
-    background-color: #fff; /* White background when sticky */
+    z-index: 1030;
+    /* Ensure it stays above other content */
+    background-color: #fff;
+    /* White background when sticky */
 }
 
 /* Add horizontal space between the navbar items */
 .navbar-nav .nav-item {
-    margin-right: 20px; /* Adjust as needed for desired spacing */
+    margin-right: 20px;
+    /* Adjust as needed for desired spacing */
 }
 
 /* Optional: Add some padding to navbar items when hovered */
@@ -41,12 +44,14 @@ body {
 
 /* Add space between icon and text */
 .navbar-nav .nav-item .nav-link i {
-    margin-right: 8px; /* Adjust spacing between icon and text */
+    margin-right: 8px;
+    /* Adjust spacing between icon and text */
 }
 
 /* Add some style when scrolling (e.g., shadow) */
 .navbar.sticky-top {
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Adds subtle shadow when sticky */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    /* Adds subtle shadow when sticky */
 }
 
 
@@ -56,7 +61,8 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh; /* Full viewport height */
+    height: 100vh;
+    /* Full viewport height */
     background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('img/top.jpg') no-repeat center center/cover;
     color: white;
 }
@@ -64,25 +70,36 @@ body {
 /* Hero Content Container */
 .hero-content {
     text-align: center;
-    max-width: 90%; /* Optional: To avoid text being too wide */
+    max-width: 90%;
+    /* Optional: To avoid text being too wide */
 }
 
 /* Button */
 
 .btn-custom {
-    color: white; /* White text color */
-    border: 2px solid white; /* White border */
-    border-radius: 30px; /* Rounded corners */
-    padding: 10px 20px; /* Padding for button size */
-    font-size: 1.1rem; /* Button font size */
-    text-decoration: none; /* Remove underline */
-    display: inline-block; /* Make sure it's inline */
+    color: white;
+    /* White text color */
+    border: 2px solid white;
+    /* White border */
+    border-radius: 30px;
+    /* Rounded corners */
+    padding: 10px 20px;
+    /* Padding for button size */
+    font-size: 1.1rem;
+    /* Button font size */
+    text-decoration: none;
+    /* Remove underline */
+    display: inline-block;
+    /* Make sure it's inline */
 }
 
 .btn-custom:hover {
-    background-color: #0b362e; /* Dark background on hover */
-    color: white; /* Keep text white on hover */
-    border-color: #0b362e; /* Optional: Change border color on hover */
+    background-color: #0b362e;
+    /* Dark background on hover */
+    color: white;
+    /* Keep text white on hover */
+    border-color: #0b362e;
+    /* Optional: Change border color on hover */
 }
 
 
@@ -91,18 +108,21 @@ body {
     font-size: 3rem;
     margin-bottom: 20px;
 }
-h2{
+
+h2 {
     font-family: 'Playfair Display', serif;
 }
 
 .hero-section p {
     font-size: 1.2rem;
 }
+
 .btn-custom {
     background-color: #124948;
     color: white;
     border: none;
 }
+
 .btn-custom:hover {
     background-color: #0b362e;
     color: white;
@@ -119,12 +139,14 @@ h2{
 .review-card:hover {
     transform: scale(1.05);
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
-    background-color: whitesmoke; /* Hover background color */
+    background-color: whitesmoke;
+    /* Hover background color */
     color: #124948;
 }
 
 .review-card:hover .p {
-    color:#124948; /* Text color on hover */
+    color: #124948;
+    /* Text color on hover */
 }
 
 
@@ -135,25 +157,31 @@ h2{
     color: #124948;
     transition: transform 0.3s, box-shadow 0.3s, background-color 0.3s ease;
     margin-bottom: 30px;
-    background-color: white; /* Default background color */
-    border-radius: 10px; /* Rounded corners for the card */
+    background-color: white;
+    /* Default background color */
+    border-radius: 10px;
+    /* Rounded corners for the card */
 }
 
 .book-card:hover {
     transform: scale(1.05);
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
-    background-color: whitesmoke; /* Hover background color */
+    background-color: whitesmoke;
+    /* Hover background color */
     color: #124948;
 }
 
 .book-cover {
     width: 100%;
     height: auto;
-    max-width: 250px; /* max width of the book */
-    max-height: 350px; /* max height of the book */
+    max-width: 250px;
+    /* max width of the book */
+    max-height: 350px;
+    /* max height of the book */
     overflow: hidden;
     position: relative;
-    margin: 0 auto; /* Centers the book */
+    margin: 0 auto;
+    /* Centers the book */
 }
 
 .book-cover img {
@@ -167,11 +195,13 @@ h2{
 .book-card .card-body {
     padding: 20px;
     text-align: center;
-    color: #124948; /* Default text color */
+    color: #124948;
+    /* Default text color */
 }
 
 .book-card:hover .card-body {
-    color:#124948; /* Text color on hover */
+    color: #124948;
+    /* Text color on hover */
 }
 
 .book-card .card-title {
@@ -181,11 +211,13 @@ h2{
 
 .book-card .card-text {
     font-size: 1rem;
-    color: #555; /* Default text color for description */
+    color: #555;
+    /* Default text color for description */
 }
 
 .book-card:hover .card-text {
-    color: #124948; /* Change text color on hover */
+    color: #124948;
+    /* Change text color on hover */
 }
 
 /* Ensure the description text dynamically fits without truncating */
@@ -193,10 +225,14 @@ h2{
     font-size: 1rem;
     color: #124948;
     font-style: italic;
-    white-space: normal; /* Allow text to wrap */
-    overflow: visible; /* Allow text to expand fully */
-    max-height: none; /* Remove any max height restriction */
-    word-wrap: break-word; /* Break long words to fit the container */
+    white-space: normal;
+    /* Allow text to wrap */
+    overflow: visible;
+    /* Allow text to expand fully */
+    max-height: none;
+    /* Remove any max height restriction */
+    word-wrap: break-word;
+    /* Break long words to fit the container */
 }
 
 
@@ -213,15 +249,21 @@ h2{
 
 
 .subscribe-section input[type="email"] {
-    border: 2px solid #124948; /* 2px solid border */
-    border-radius: 20px; /* Rounded corners */
-    padding: 10px; /* Padding for better appearance */
-    font-size: 1rem; /* Adjust font size */
+    border: 2px solid #124948;
+    /* 2px solid border */
+    border-radius: 20px;
+    /* Rounded corners */
+    padding: 10px;
+    /* Padding for better appearance */
+    font-size: 1rem;
+    /* Adjust font size */
 }
 
 .subscribe-section input[type="email"]:focus {
-    border-color: #0b362e; /* Change border color on focus */
-    box-shadow: 0 0 5px rgba(18, 73, 72, 0.5); /* Optional shadow effect on focus */
+    border-color: #0b362e;
+    /* Change border color on focus */
+    box-shadow: 0 0 5px rgba(18, 73, 72, 0.5);
+    /* Optional shadow effect on focus */
 }
 
 /* Footer */

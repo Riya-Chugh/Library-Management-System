@@ -55,7 +55,8 @@ body {
 }
 
 /* Book-Like Layout for Left and Right Pages */
-.left-side, .right-side {
+.left-side,
+.right-side {
     flex: 1;
     padding: 20px;
     border: 2px solid #124948;
@@ -68,8 +69,10 @@ body {
     justify-content: center;
     align-items: center;
     background-color: #e9ecef;
-    border-radius: 10px 0 0 10px; /* Rounded corners for left side */
-    margin-right: -1px; /* Slightly overlap the sides */
+    border-radius: 10px 0 0 10px;
+    /* Rounded corners for left side */
+    margin-right: -1px;
+    /* Slightly overlap the sides */
 }
 
 .signup-image {
@@ -86,7 +89,8 @@ body {
     justify-content: center;
     align-items: center;
     border-radius: 0 10px 10px 0;
-    margin-left: -1px; /* Slightly overlap the sides */
+    margin-left: -1px;
+    /* Slightly overlap the sides */
 }
 
 h2 {
@@ -105,7 +109,8 @@ h2 {
     color: red;
     font-size: 0.9em;
     margin-top: 5px;
-    display: none; /* Hide by default */
+    display: none;
+    /* Hide by default */
 }
 
 
@@ -153,10 +158,9 @@ h2 {
 
 /* Responsiveness for smaller screens */
 @media (max-width: 768px) {
-
-
-
-    .left-side,.right-side{
+    
+    .left-side,
+    .right-side {
         margin-left: 10px;
     }
 
@@ -179,4 +183,3 @@ h2 {
         padding: 10px 10px 10px 30px;
     }
 }
-

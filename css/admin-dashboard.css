@@ -1,4 +1,5 @@
-body, html {
+body,
+html {
     margin: 0;
     padding: 0;
     font-family: 'Arial', sans-serif;
@@ -24,13 +25,16 @@ body, html {
 .navbar {
     position: sticky;
     top: 0;
-    z-index: 1030; /* Ensure it stays above other content */
-    background-color: #fff; /* White background when sticky */
+    z-index: 1030;
+    /* Ensure it stays above other content */
+    background-color: #fff;
+    /* White background when sticky */
 }
 
 /* Add horizontal space between the navbar items */
 .navbar-nav .nav-item {
-    margin-right: 20px; /* Adjust as needed for desired spacing */
+    margin-right: 20px;
+    /* Adjust as needed for desired spacing */
 }
 
 /* Optional: Add some padding to navbar items when hovered */
@@ -41,12 +45,14 @@ body, html {
 
 /* Add space between icon and text */
 .navbar-nav .nav-item .nav-link i {
-    margin-right: 8px; /* Adjust spacing between icon and text */
+    margin-right: 8px;
+    /* Adjust spacing between icon and text */
 }
 
 /* Add some style when scrolling (e.g., shadow) */
 .navbar.sticky-top {
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Adds subtle shadow when sticky */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    /* Adds subtle shadow when sticky */
 }
 
 /* Dashboard Cards Layout */
@@ -68,8 +74,10 @@ body, html {
     padding: 20px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s, box-shadow 0.3s;
-    min-height: 150px; /* Set a minimum height for consistency */
-    text-align: center; /* Center content horizontally */
+    min-height: 150px;
+    /* Set a minimum height for consistency */
+    text-align: center;
+    /* Center content horizontally */
 }
 
 .card:hover {
@@ -81,7 +89,8 @@ body, html {
 .card-content {
     display: flex;
     flex-direction: column;
-    justify-content: center; /* Center the content vertically */
+    justify-content: center;
+    /* Center the content vertically */
     align-items: center;
 }
 
@@ -93,7 +102,8 @@ body, html {
 
 .card-content .count {
     margin: 10px 0 0;
-    font-size: 2.5rem; /* Increase font size for better visibility */
+    font-size: 2.5rem;
+    /* Increase font size for better visibility */
     font-weight: bold;
     color: #0b362e;
 }
@@ -106,7 +116,8 @@ body, html {
 
 /* Ensure cards have consistent height */
 .card .card-content {
-    flex-grow: 1; /* Allow the content to take up the available space */
+    flex-grow: 1;
+    /* Allow the content to take up the available space */
 }
 
 /* Responsive Adjustments */
@@ -117,11 +128,14 @@ body, html {
 
     .card {
         flex-direction: column;
-        align-items: center; /* Ensure the content is centered */
-        text-align: center; /* Ensure text is centered */
+        align-items: center;
+        /* Ensure the content is centered */
+        text-align: center;
+        /* Ensure text is centered */
     }
 
     .card-icon {
-        margin-top: 15px; /* Space out icon from text when stacked */
+        margin-top: 15px;
+        /* Space out icon from text when stacked */
     }
 }

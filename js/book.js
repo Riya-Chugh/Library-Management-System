@@ -16,7 +16,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
 
 // Search functionality
-document.getElementById('search-form').addEventListener('submit', function(e) {
+document.getElementById('search-form').addEventListener('submit', function (e) {
     e.preventDefault(); // Prevent the form from submitting
     let query = document.getElementById('search-input').value.toLowerCase(); // Get the search input and convert it to lowercase
     let books = document.querySelectorAll('.book-card'); // Get all book cards
@@ -26,7 +26,7 @@ document.getElementById('search-form').addEventListener('submit', function(e) {
     // Hide the error message initially
     errorMessage.style.display = 'none';
 
-    books.forEach(function(book) {
+    books.forEach(function (book) {
         let title = book.getAttribute('data-title').toLowerCase(); // Get the book title and convert to lowercase
 
         if (title.includes(query)) {
@@ -66,6 +66,41 @@ const books = [
         price: 599,
         description: "Practical secrets to achieve inner peace, happiness, and success.",
         image: "img/books/book-3.jpg"
+    },
+    {
+        id: 4,
+        title: "THE MOUNTAIN IS YOU",
+        price: 599,
+        description: "It's not whether you “feel” like putting in the work, but whether or not you do it regardless.",
+        image: "img/books/book-4.jpg"
+    },
+    {
+        id: 5,
+        title: "THE ALCHEMIST",
+        price: 599,
+        description: "a story of following one's dreams to find one's purpose in life.",
+        image: "img/books/book-5.jpg"
+    },
+    {
+        id: 6,
+        title: "THE ART OF WAR",
+        price: 599,
+        description: "war should be avoided with diplomacy.",
+        image: "img/books/book-6.jpg"
+    },
+    {
+        id: 7,
+        title: "THE KITE RUNNER",
+        price: 599,
+        description: "is a deeply moving and powerful story about friendship, betrayal, and redemption.",
+        image: "img/books/book-7.jpg"
+    },
+    {
+        id: 8,
+        title: "THE MAGIC",
+        price: 599,
+        description: "reveals life-changing knowledge about the power of gratitude that was hidden within a 2,000-year-old sacred text.",
+        image: "img/books/book-8.jpg"
     }
 ];
 
@@ -100,10 +135,10 @@ document.addEventListener('DOMContentLoaded', () => {
     const cart = JSON.parse(localStorage.getItem('cart')) || [];
     const cartCount = cart.length;
 
-    if(cartCount === 0){
+    if (cartCount === 0) {
         document.getElementById('cart').innerHTML = `<a class="nav-link" href="cart.html"><i class="fas fa-shopping-cart"></i> Cart</a>`;
     }
-    
+
     // Update the cart link with the count
     document.getElementById('cart').innerHTML = `<a class="nav-link" href="cart.html"><i class="fas fa-shopping-cart"></i> Cart(${cartCount})</a>`;
 });

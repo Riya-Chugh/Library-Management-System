@@ -19,7 +19,7 @@ document.addEventListener("DOMContentLoaded", function () {
         // Hide Login/Signup button
         loginSignupBtn.classList.add("d-none");
 
-        
+
     } else {
         // Show Login/Signup button
         loginSignupBtn.classList.remove("d-none");
@@ -35,17 +35,15 @@ document.addEventListener("DOMContentLoaded", function () {
         window.location.reload(); // Refresh the page
     });
 });
-
-
 // Optional: Display cart count or update UI based on cart contents
 document.addEventListener('DOMContentLoaded', () => {
     const cart = JSON.parse(localStorage.getItem('cart')) || [];
     const cartCount = cart.length;
 
-    if(cartCount === 0){
+    if (cartCount === 0) {
         document.getElementById('cart').innerHTML = `<a class="nav-link" href="cart.html"><i class="fas fa-shopping-cart"></i> Cart</a>`;
     }
-    
+
     // Update the cart link with the count
     document.getElementById('cart').innerHTML = `<a class="nav-link" href="cart.html"><i class="fas fa-shopping-cart"></i> Cart(${cartCount})</a>`;
 });

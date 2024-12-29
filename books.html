@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,12 +9,15 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <!-- Custom CSS -->
     <link href="css/books.css" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Playfair+Display:wght@700&display=swap"
+        rel="stylesheet">
     <!-- Font Awesome -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
     <!-- Animate.css -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
 </head>
+
 <body>
     <style>
         .price {
@@ -23,57 +27,69 @@
         }
     </style>
 
-    
 
- <!-- Navigation Bar -->
- <nav class="navbar navbar-expand-lg navbar-light bg-light shadow sticky-top">
-    <div class="container">
-        <a class="navbar-brand" href="index.html">
-            <img src="img/logo.png" alt="Library Logo">
-        </a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav ms-auto">
-                <li class="nav-item"><a class="nav-link active" href="index.html"><i class="fas fa-home"></i> Home</a></li>
-                <li class="nav-item"><a class="nav-link" href="about.html"><i class="fas fa-info-circle"></i> About Us</a></li>
-                <li class="nav-item"><a class="nav-link" href="contact.html"><i class="fas fa-phone"></i> Contact Us</a></li>
-                <li class="nav-item"><a class="nav-link" href="books.html"><i class="fas fa-book"></i> Books</a></li>
-                 <!-- Reserve Book: Hidden by default -->
-                <li class="nav-item d-none" id="reserve-book">
-                    <a class="nav-link" href="reserve-books.html"><i class="fas fa-bookmark"></i> Reserve Book</a>
-                </li>
-            
-                <!-- Login/Signup -->
-                <li class="nav-item" id="login-signup-btn">
-                    <a class="nav-link" href="login.html"><i class="fas fa-sign-in-alt"></i> Login / Signup</a>
-                </li>
 
-                <li class="nav-item d-none" id="cart"><a class="nav-link" href="cart.html"><i class="fas fa-shopping-cart"></i> Cart</a></li>
-            
-                <!-- Dropdown for Logged-In User -->
-                <li class="nav-item dropdown d-none" id="welcome-user">
-                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                        <i class="fas fa-user"></i> <span id="username-placeholder">User</span>
-                    </a>
-                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                        <li class="nav-item"><a class="nav-link" href="profile.html"><i class="fas fa-user-circle"></i> My Profile</a></li>
-                        <li class="nav-item"><hr class="dropdown-divider"></li>
-                        <li class="nav-item"><a class="nav-link" href="#log-out" id="logout-btn"><i class="fas fa-sign-out-alt"></i> Logout</a></li>
-                    </ul>
-                </li>
-            </ul>
-            
+    <!-- Navigation Bar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light shadow sticky-top">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <img src="img/logo.png" alt="Library Logo">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link active" href="index.html"><i class="fas fa-home"></i>
+                            Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="about.html"><i class="fas fa-info-circle"></i> About
+                            Us</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contact.html"><i class="fas fa-phone"></i> Contact
+                            Us</a></li>
+                    <li class="nav-item"><a class="nav-link" href="books.html"><i class="fas fa-book"></i> Books</a>
+                    </li>
+                    <!-- Reserve Book: Hidden by default -->
+                    <li class="nav-item d-none" id="reserve-book">
+                        <a class="nav-link" href="reserve-books.html"><i class="fas fa-bookmark"></i> Reserve Book</a>
+                    </li>
+
+                    <!-- Login/Signup -->
+                    <li class="nav-item" id="login-signup-btn">
+                        <a class="nav-link" href="login.html"><i class="fas fa-sign-in-alt"></i> Login / Signup</a>
+                    </li>
+
+                    <li class="nav-item d-none" id="cart"><a class="nav-link" href="cart.html"><i
+                                class="fas fa-shopping-cart"></i> Cart</a></li>
+
+                    <!-- Dropdown for Logged-In User -->
+                    <li class="nav-item dropdown d-none" id="welcome-user">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            <i class="fas fa-user"></i> <span id="username-placeholder">User</span>
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li class="nav-item"><a class="nav-link" href="profile.html"><i
+                                        class="fas fa-user-circle"></i> My Profile</a></li>
+                            <li class="nav-item">
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li class="nav-item"><a class="nav-link" href="#log-out" id="logout-btn"><i
+                                        class="fas fa-sign-out-alt"></i> Logout</a></li>
+                        </ul>
+                    </li>
+                </ul>
+
+            </div>
         </div>
-    </div>
-</nav>
+    </nav>
 
-      <!-- Search Section -->
-      <div class="container mt-4">
+    <!-- Search Section -->
+    <div class="container mt-4">
         <h2 class="text-center">Search Books</h2>
         <form class="d-flex justify-content-center mt-3" id="search-form" method="get">
-            <input class="form-control me-2" type="search" placeholder="Search for books..." aria-label="Search" style="max-width: 600px;" id="search-input">
+            <input class="form-control me-2" type="search" placeholder="Search for books..." aria-label="Search"
+                style="max-width: 600px;" id="search-input">
             <button class="btn btn-custom" type="submit"><i class="fas fa-search"></i> Search</button>
         </form>
     </div>
@@ -83,7 +99,7 @@
     <div class="container mt-5">
         <h2 class="text-center mb-4">All Books</h2>
 
-     
+
 
         <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 g-4">
             <!-- Book Cards (with data-book-id and other attributes) -->
@@ -94,12 +110,15 @@
                     </div>
                     <div class="card-body">
                         <h5 class="card-title">THE POWER OF YOUR SUBCONSCIOUS MIND</h5>
-                        <p class="card-text" style="font-style: italic;"> - Unlock your subconscious to achieve your goals.</p>
+                        <p class="card-text" style="font-style: italic;"> - Unlock your subconscious to achieve your
+                            goals.</p>
                     </div>
                     <div class="card-footer d-flex justify-content-between">
                         <span class="price">₹ 499</span>
-                        <button class="btn btn-custom" onclick="addToCart(1)"><i class="fas fa-cart-plus"></i> Cart</button>
-                        <button class="btn btn-custom" onclick="addToReserve(1)"><i class="fas fa-plus"></i> Reserve</button>
+                        <button class="btn btn-custom" onclick="addToCart(1)"><i class="fas fa-cart-plus"></i>
+                            Cart</button>
+                        <button class="btn btn-custom" onclick="addToReserve(1)"><i class="fas fa-plus"></i>
+                            Reserve</button>
                     </div>
                 </div>
             </div>
@@ -111,12 +130,15 @@
                     </div>
                     <div class="card-body">
                         <h5 class="card-title">THE ART OF LETTING GO</h5>
-                        <p class="card-text" style="font-style: italic;"> - A profound journey of self-discovery and personal growth.</p>
+                        <p class="card-text" style="font-style: italic;"> - A profound journey of self-discovery and
+                            personal growth.</p>
                     </div>
                     <div class="card-footer d-flex justify-content-between">
                         <span class="price">₹ 399</span>
-                        <button class="btn btn-custom" onclick="addToCart(2)"><i class="fas fa-cart-plus"></i> Cart</button>
-                        <button class="btn btn-custom" onclick="addToReserve(2)"><i class="fas fa-plus"></i> Reserve</button>
+                        <button class="btn btn-custom" onclick="addToCart(2)"><i class="fas fa-cart-plus"></i>
+                            Cart</button>
+                        <button class="btn btn-custom" onclick="addToReserve(2)"><i class="fas fa-plus"></i>
+                            Reserve</button>
                     </div>
                 </div>
             </div>
@@ -128,102 +150,119 @@
                     </div>
                     <div class="card-body">
                         <h5 class="card-title">LIFE'S AMAZING SECRETS</h5>
-                        <p class="card-text" style="font-style: italic;">- Practical secrets to achieve inner peace, happiness, and success.</p>
+                        <p class="card-text" style="font-style: italic;">- Practical secrets to achieve inner peace,
+                            happiness, and success.</p>
                     </div>
                     <div class="card-footer d-flex justify-content-between align-items-center">
                         <span class="price">₹ 599</span>
-                        <button class="btn btn-custom" onclick="addToCart(3)"><i class="fas fa-cart-plus"></i> Cart</button>
-                        <button class="btn btn-custom" onclick="addToReserve(3)"><i class="fas fa-plus"></i> Reserve</button>
+                        <button class="btn btn-custom" onclick="addToCart(3)"><i class="fas fa-cart-plus"></i>
+                            Cart</button>
+                        <button class="btn btn-custom" onclick="addToReserve(3)"><i class="fas fa-plus"></i>
+                            Reserve</button>
                     </div>
                 </div>
             </div>
 
             <div class="col">
-                <div class="card book-card" data-title="THE MOUNTAIN IS YOU" data-book-id="3">
+                <div class="card book-card" data-title="THE MOUNTAIN IS YOU" data-book-id="4">
                     <div class="book-cover">
                         <img src="img/books/book-4.jpg" alt="Book 4">
                     </div>
                     <div class="card-body">
                         <h5 class="card-title">THE MOUNTAIN IS YOU</h5>
-                        <p class="card-text" style="font-style: italic;">- Practical secrets to achieve inner peace, happiness, and success.</p>
+                        <p class="card-text" style="font-style: italic;">- It's not whether you “feel” like putting in
+                            the work, but whether or not you do it regardless</p>
                     </div>
                     <div class="card-footer d-flex justify-content-between align-items-center">
                         <span class="price">₹ 599</span>
-                        <button class="btn btn-custom" onclick="addToCart(3)"><i class="fas fa-cart-plus"></i> Cart</button>
-                        <button class="btn btn-custom" onclick="addToReserve(3)"><i class="fas fa-plus"></i> Reserve</button>
+                        <button class="btn btn-custom" onclick="addToCart(4)"><i class="fas fa-cart-plus"></i>
+                            Cart</button>
+                        <button class="btn btn-custom" onclick="addToReserve(4)"><i class="fas fa-plus"></i>
+                            Reserve</button>
                     </div>
                 </div>
             </div>
 
 
-           
+
 
 
             <div class="col">
-                <div class="card book-card" data-title="THE ALCHEMIST" data-book-id="3">
+                <div class="card book-card" data-title="THE ALCHEMIST" data-book-id="5">
                     <div class="book-cover">
                         <img src="img/books/book-5.jpg" alt="Book 5">
                     </div>
                     <div class="card-body">
                         <h5 class="card-title">THE ALCHEMIST</h5>
-                        <p class="card-text" style="font-style: italic;">- Practical secrets to achieve inner peace, happiness, and success.</p>
+                        <p class="card-text" style="font-style: italic;">- a story of following one's dreams to find
+                            one's purpose in life.</p>
                     </div>
                     <div class="card-footer d-flex justify-content-between align-items-center">
                         <span class="price">₹ 599</span>
-                        <button class="btn btn-custom" onclick="addToCart(3)"><i class="fas fa-cart-plus"></i> Cart</button>
-                        <button class="btn btn-custom" onclick="addToReserve(3)"><i class="fas fa-plus"></i> Reserve</button>
+                        <button class="btn btn-custom" onclick="addToCart(5)"><i class="fas fa-cart-plus"></i>
+                            Cart</button>
+                        <button class="btn btn-custom" onclick="addToReserve(5)"><i class="fas fa-plus"></i>
+                            Reserve</button>
                     </div>
                 </div>
             </div>
 
 
             <div class="col">
-                <div class="card book-card" data-title="THE ART OF WAR" data-book-id="3">
+                <div class="card book-card" data-title="THE ART OF WAR" data-book-id="6">
                     <div class="book-cover">
                         <img src="img/books/book-6.jpg" alt="Book 6">
                     </div>
                     <div class="card-body">
                         <h5 class="card-title">THE ART OF WAR</h5>
-                        <p class="card-text" style="font-style: italic;">- Practical secrets to achieve inner peace, happiness, and success.</p>
+                        <p class="card-text" style="font-style: italic;">- war should be avoided with diplomacy.</p>
                     </div>
                     <div class="card-footer d-flex justify-content-between align-items-center">
                         <span class="price">₹ 599</span>
-                        <button class="btn btn-custom" onclick="addToCart(3)"><i class="fas fa-cart-plus"></i> Cart</button>
-                        <button class="btn btn-custom" onclick="addToReserve(3)"><i class="fas fa-plus"></i> Reserve</button>
+                        <button class="btn btn-custom" onclick="addToCart(6)"><i class="fas fa-cart-plus"></i>
+                            Cart</button>
+                        <button class="btn btn-custom" onclick="addToReserve(6)"><i class="fas fa-plus"></i>
+                            Reserve</button>
                     </div>
                 </div>
             </div>
 
             <div class="col">
-                <div class="card book-card" data-title="THE KITE RUNNER" data-book-id="3">
+                <div class="card book-card" data-title="THE KITE RUNNER" data-book-id="7">
                     <div class="book-cover">
                         <img src="img/books/book-7.jpg" alt="Book 7">
                     </div>
                     <div class="card-body">
                         <h5 class="card-title">THE KITE RUNNER</h5>
-                        <p class="card-text" style="font-style: italic;">- Practical secrets to achieve inner peace, happiness, and success.</p>
+                        <p class="card-text" style="font-style: italic;">- is a deeply moving and powerful story about
+                            friendship, betrayal, and redemption.</p>
                     </div>
                     <div class="card-footer d-flex justify-content-between align-items-center">
                         <span class="price">₹ 599</span>
-                        <button class="btn btn-custom" onclick="addToCart(3)"><i class="fas fa-cart-plus"></i> Cart</button>
-                        <button class="btn btn-custom" onclick="addToReserve(3)"><i class="fas fa-plus"></i> Reserve</button>
+                        <button class="btn btn-custom" onclick="addToCart(7)"><i class="fas fa-cart-plus"></i>
+                            Cart</button>
+                        <button class="btn btn-custom" onclick="addToReserve(7)"><i class="fas fa-plus"></i>
+                            Reserve</button>
                     </div>
                 </div>
             </div>
 
             <div class="col">
-                <div class="card book-card" data-title="THE MAGIC" data-book-id="3">
+                <div class="card book-card" data-title="THE MAGIC" data-book-id="8">
                     <div class="book-cover">
                         <img src="img/books/book-8.jpg" alt="Book 8">
                     </div>
                     <div class="card-body">
                         <h5 class="card-title">THE MAGIC</h5>
-                        <p class="card-text" style="font-style: italic;">- Practical secrets to achieve inner peace, happiness, and success.</p>
+                        <p class="card-text" style="font-style: italic;">- reveals life-changing knowledge about the
+                            power of gratitude that was hidden within a 2,000-year-old sacred text.</p>
                     </div>
                     <div class="card-footer d-flex justify-content-between align-items-center">
                         <span class="price">₹ 599</span>
-                        <button class="btn btn-custom" onclick="addToCart(3)"><i class="fas fa-cart-plus"></i> Cart</button>
-                        <button class="btn btn-custom" onclick="addToReserve(3)"><i class="fas fa-plus"></i> Reserve</button>
+                        <button class="btn btn-custom" onclick="addToCart(8)"><i class="fas fa-cart-plus"></i>
+                            Cart</button>
+                        <button class="btn btn-custom" onclick="addToReserve(8)"><i class="fas fa-plus"></i>
+                            Reserve</button>
                     </div>
                 </div>
             </div>
@@ -238,7 +277,8 @@
     <!-- Bootstrap JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
     <!-- Custom JS -->
-     <script src="js/index.js"></script>
+    <script src="js/index.js"></script>
     <script src="js/book.js"></script>
 </body>
+
 </html>
